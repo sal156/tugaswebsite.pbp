@@ -26,11 +26,15 @@ Kelas: TI-F
 - Desain Responsif: tampilan menyesuaikan untuk perangkat mobile maupun desktop.
 - Interaktivitas: [Di menu produk bisa mencari produk yang di inginkan].
 
+
+
 # Bagian Menu Beranda #
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%201.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%202.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%203.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%204.png?raw=true)
+
+
 
 # Bagian Menu Produk #
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%201.png?raw=true)
@@ -39,5 +43,7 @@ Kelas: TI-F
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%204.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%205.png?raw=true)
 
-# Bagian Menu Konta #
+
+
+# Bagian Menu Kontak #
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/3.Menu_Kontak/kontak.png?raw=true)

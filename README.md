@@ -35,7 +35,7 @@ Kelas: TI-F
 # Bagian Menu Produk #
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%201.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%202.png?raw=true)
-![alt text](?raw=true)
+![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%203.png?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 

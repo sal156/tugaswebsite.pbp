@@ -7,22 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuItems.forEach(item => {
     item.addEventListener("click", function () {
-      // Hapus status aktif dari semua menu
       menuItems.forEach(i => i.classList.remove("active-menu"));
       // Tambahkan status aktif pada menu yang diklik
       this.classList.add("active-menu");
-      // Tidak ada preventDefault — biarkan link berjalan normal
     });
   });
 });
 
-// diskon
+
+// diskon index
 document.addEventListener("DOMContentLoaded", () => {
   const categoryTabs = document.querySelectorAll("#categoryTabs button");
   const products = document.querySelectorAll("#productGrid .product-card");
   const searchInput = document.getElementById("searchInput");
 
-  let selectedCategory = "burgers"; // default active category
+  let selectedCategory = "burgers"; 
 
   function filterProducts() {
     const searchTerm = searchInput.value.toLowerCase();
@@ -41,25 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Tab click event
   categoryTabs.forEach(tab => {
     tab.addEventListener("click", () => {
-      // Remove active class from all tabs
       categoryTabs.forEach(t => t.classList.remove("active"));
-      // Add active class to clicked tab
       tab.classList.add("active");
-
       selectedCategory = tab.getAttribute("data-category");
       filterProducts();
     });
   });
 
-  // Search input event
+  // men input mnu
   searchInput.addEventListener("input", () => {
     filterProducts();
   });
-
-  // Initial filter on page load
   filterProducts();
 });
 
@@ -118,23 +111,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-//=======================================
-//   5. Review pelnaggan
-//=======================================
-const wrapper = document.querySelector('.reviews-wrapper');
-const next = document.querySelector('.btn-next');
-const prev = document.querySelector('.btn-prev');
-
-// Geser ke kanan
-next.addEventListener('click', () => {
-  wrapper.scrollBy({ left: 320, behavior: 'smooth' });
-});
-
-// Geser ke kiri
-prev.addEventListener('click', () => {
-  wrapper.scrollBy({ left: -320, behavior: 'smooth' });
-});

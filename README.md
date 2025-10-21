@@ -31,9 +31,13 @@ Kelas: TI-F
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%202.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%203.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%204.png?raw=true)
+
+# Bagian Menu Produk #
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
+
+# Bagian Menu Konta #
 ![alt text](?raw=true)

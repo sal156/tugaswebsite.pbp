@@ -29,7 +29,7 @@ Kelas: TI-F
 # Bagian Menu Beranda #
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%201.png?raw=true)
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%202.png?raw=true)
-![alt text](?raw=true)
+![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%203.png?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)

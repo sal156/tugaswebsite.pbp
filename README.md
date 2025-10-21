@@ -27,4 +27,4 @@ Kelas: TI-F
 - Interaktivitas: [Di menu produk bisa mencari produk yang di inginkan].
 
 
-![alt text](?raw=true)
+![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/1._Menu_Beranda/beranda%201.png?raw=true)

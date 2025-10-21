@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Restoran Kami</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="xproduk.css">
+</head>
+<body>
+
+<!--============================-->
+<!-- 1.  Navbar -->
+ <!--===========================-->
+<nav class="navbar navbar-expand-lg bg-white border-bottom p-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://static.vecteezy.com/system/resources/previews/052/792/818/non_2x/restaurant-logo-design-vector.jpg" alt="Logo" width="40"> 
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 menu-list">
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item active-menu" href="xproduk.css">produk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="xkontak.html">Kontak</a>
+                </li>
+            </ul>
+
+            <button class="btn btn-keranjang ms-lg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 7.646a.5.5 0 0 0-.708-.708L7.5 13.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<!--=============================-->
+<!--  2. Struktur Daftar Produk -->
+<!--=============================-->
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 product-header">
+      <h3 class="fw-bold header-title">Menu Kami</h3>
+      <div class="input-group search-input-group">
+        <input type="text" class="form-control" placeholder="Cari menu..." id="searchInput" />
+        <span class="input-group-text search-icon-bg">🔍</span>
+      </div>
+    </div>
+
+    <!-- Kategori menu -->
+    <ul class="nav nav-tabs nav-tabs-custom mb-5" id="categoryTabs">
+      <li class="nav-item"><button class="nav-link tab-orange active" data-category="burgers">Burger</button></li>
+      <li class="nav-item"><button class="nav-link tab-orange" data-category="fries">Kentang Goreng</button></li>
+      <li class="nav-item"><button class="nav-link tab-orange" data-category="snack">Camilan</button></li>
+      <li class="nav-item"><button class="nav-link tab-orange" data-category="cold-drinks">Minuman Dingin</button></li>
+      <li class="nav-item"><button class="nav-link tab-orange" data-category="pizza">Pizza</button></li>
+    </ul>
+
+    <!-- Grid produk -->
+    <div id="productGrid" class="row g-4">
+      <!-- Contoh satu produk -->
+      <div class="col-lg-4 col-md-6 product-card burgers">
+        <div class="card h-100 position-relative">
+          <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/06/Barbecue-beef-burger-68d57ec.jpg" class="card-img-top" alt="Beef BBQ Burger">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Beef BBQ Burger</h5>
+            <p class="card-text description-text">Burger daging sapi premium dengan saus BBQ khas.</p>
+            <p class="product-price">
+              <span class="product-price fw-bold">Rp 55.000</span>
+             
+            </p>
+          </div>
+          <button class="btn btn-add-to-cart">+</button>
+        </div>
+      </div>
+
+      <!-- -kartu  BURGER -->
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/06/Barbecue-beef-burger-68d57ec.jpg" class="card-img-top" alt="Beef BBQ Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Beef BBQ Burger</h5>
+            <p class="card-text description-text">Burger daging sapi premium dengan saus BBQ khas.</p>
+            <p class="product-price fw-bold">RP. 49.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebp8Ilbi2itncqVLsYnSUG2IqaaMj2OP8YA&s" class="card-img-top" alt="Double Trouble Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Double Trouble Burger</h5>
+            <p class="card-text description-text">Dua lapis daging sapi juicy dengan keju leleh.</p>
+            <p class="product-price fw-bold">Rp 58.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNKdOz60Dlw_FcF7P8tJp41Of3aC5nLj0_5g&s" class="card-img-top" alt="Chicken Crispy Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Chicken Crispy Burger</h5>
+            <p class="card-text description-text">Ayam goreng renyah dengan saus mayo spesial.</p>
+            <p class="product-price fw-bold">Rp 42.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGEH2fApjEBsFQ1fBl4e9VvvPQXhgHEEYzfQ&s" class="card-img-top" alt="Spicy Volcano Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Spicy Volcano Burger</h5>
+            <p class="card-text description-text">Burger pedas dengan saus sambal khas dan cabai jalapeño.</p>
+            <p class="product-price fw-bold">Rp 47.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://insanelygoodrecipes.com/wp-content/uploads/2024/08/Mushroom-Swiss-Burger-Featured.jpg" class="card-img-top" alt="Mushroom Melt Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Mushroom Melt Burger</h5>
+            <p class="card-text description-text">Burger sapi dengan jamur tumis dan saus keju creamy.</p>
+            <p class="product-price fw-bold">Rp 50.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://img.freepik.com/free-photo/front-view-tasty-meat-burger_141793-15542.jpg" class="card-img-top" alt="Cheesy Bacon Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Cheesy Bacon Burger</h5>
+            <p class="card-text description-text">Daging sapi lezat dengan keju cheddar dan irisan bacon renyah.</p>
+            <p class="product-price fw-bold">Rp 53.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card burgers">
+    <div class="card h-100 position-relative">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQQha5hhVXAHkREEn4qmT6Zi4H3Nd-8IA8Fg&s" class="card-img-top" alt="Zesty Chicken Burger">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Zesty Chicken Burger</h5>
+            <p class="card-text description-text">Burger ayam panggang dengan saus lemon herb yang segar.</p>
+            <p class="product-price fw-bold">Rp 44.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+    <!-- Kartu kentang goreng -->
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://www.wendys.com/sites/default/files/styles/max_650x650/public/2021-05/large-fries-23_medium_US_en.png?itok=Z6CgHD8T" 
+            class="card-img-top" 
+            alt="Kentang Goreng Large"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng Large</h5>
+            <p class="card-text description-text">Kentang goreng renyah dengan porsi lebih banyak.</p>
+            <p class="product-price fw-bold">Rp 35.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://akcdn.detik.net.id/community/media/visual/2016/10/25/9f75b6c4-ce80-4c02-be8c-e82150a5811d_169.jpg?w=620" 
+            class="card-img-top" 
+            alt="Kentang Goreng Keju"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng Keju</h5>
+            <p class="card-text description-text">Kentang goreng dengan topping saus keju leleh.</p>
+            <p class="product-price fw-bold">Rp 38.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://www.safarfriendly.com/wp-content/uploads/2025/03/632159cd811f2.jpg" 
+            class="card-img-top" 
+            alt="Kentang Goreng Pedas"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng Pedas</h5>
+            <p class="card-text description-text">Kentang goreng dengan bumbu pedas menggigit.</p>
+            <p class="product-price fw-bold">Rp 30.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://img.inews.co.id/media/822/files/inews_new/2022/01/03/Resep_Garlic_Cheese_Fries.jpg" 
+            class="card-img-top" 
+            alt="Kentang Goreng Garlic"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng Garlic</h5>
+            <p class="card-text description-text">Kentang goreng dengan aroma bawang putih yang khas.</p>
+            <p class="product-price fw-bold">Rp 33.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://www.tokomesin.com/wp-content/uploads/2017/09/kentang-goreng-original.jpg" 
+            class="card-img-top" 
+            alt="Kentang Goreng Original"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng Original</h5>
+            <p class="card-text description-text">Kentang goreng klasik dengan rasa original yang gurih.</p>
+            <p class="product-price fw-bold">Rp 28.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://healthybelly.s3.amazonaws.com/product/media_1653666081_0.jpeg" 
+            class="card-img-top" 
+            alt="Kentang Goreng Truffle"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng Truffle</h5>
+            <p class="card-text description-text">Kentang goreng premium dengan aroma minyak truffle yang mewah.</p>
+            <p class="product-price fw-bold">Rp 45.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card fries">
+    <div class="card h-100 position-relative">
+        <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalSwRVy2l_ZMoXGQXyUJH_1oWNV8dHNX6hA&s" 
+            class="card-img-top" 
+            alt="Kentang Goreng BBQ"
+        >
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Kentang Goreng BBQ</h5>
+            <p class="card-text description-text">Kentang goreng dengan bumbu BBQ manis gurih yang menggoda selera.</p>
+            <p class="product-price fw-bold">Rp 32.000</p>
+        </div>
+        <button class="btn btn-add-to-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+<!-- kartu CAMILAN -->
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://asset.kompas.com/crops/MapzWs321UhZDy6iJf2MBoP1ZRs=/0x0:1000x667/1200x800/data/photo/2021/10/15/6168e5a13fbdf.jpg" class="card-img-top" alt="Nugget Ayam">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Nugget Ayam</h5>
+      <p class="card-text description-text">Nugget ayam gurih dan renyah khas McD.</p>
+      <p class="product-price fw-bold">Rp 28.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://www.unileverfoodsolutions.co.id/dam/global-ufs/mcos/SEA/calcmenu/recipes/ID-recipes/chicken-&-other-poultry-dishes/crispy-fried-chicken/Ayam%20Goreng%20Krispy1260x700.jpg" class="card-img-top" alt="Ayam Crispy">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Ayam Crispy</h5>
+      <p class="card-text description-text">Ayam goreng krispi dengan bumbu rahasia spesial.</p>
+      <p class="product-price fw-bold">Rp 32.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//113/MTA-90548788/brd-44261_es-krim-diamond-8-liter-rasa-vanila-ice-cream-diamond-vanilla-8-ltr_full01.jpg" class="card-img-top" alt="Es Krim">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Es Krim</h5>
+      <p class="card-text description-text">Es krim lembut berbagai rasa yang menyegarkan.</p>
+      <p class="product-price fw-bold">Rp 15.000</p>
+    </div>
+    <button class="btn btn-add-to-cart" style="color: white;">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://easyweeknightrecipes.com/wp-content/uploads/2024/04/Mozzarella-Sticks_0013.jpg" class="card-img-top" alt="Mozzarella Stick">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Mozzarella Stick</h5>
+      <p class="card-text description-text">Keju mozzarella goreng dengan lapisan tepung renyah.</p>
+      <p class="product-price fw-bold">Rp 30.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://asset.kompas.com/crops/l4NugScakkpODgZXQXgld2_lnc0=/0x0:1000x667/1200x800/data/photo/2021/06/10/60c191379a00a.jpg" class="card-img-top" alt="Tahu Crispy">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Tahu Crispy</h5>
+      <p class="card-text description-text">Tahu goreng renyah di luar, lembut di dalam.</p>
+      <p class="product-price fw-bold">Rp 18.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDirDNWj0LRVn4IDkEFItvldFi212TxnQiA&s" class="card-img-top" alt="Onion Ring">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Onion Ring</h5>
+      <p class="card-text description-text">Cincin bawang goreng renyah dengan rasa gurih khas barat.</p>
+      <p class="product-price fw-bold">Rp 22.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card snack">
+  <div class="card h-100 position-relative">
+    <img src="https://media.indozone.id/crop/photo/p2/94/2023/12/27/Sosis-Bakar-Cookpad-3512785465.jpg" class="card-img-top" alt="Sosis Bakar">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Sosis Bakar</h5>
+      <p class="card-text description-text">Sosis bakar dengan saus manis pedas yang menggugah selera.</p>
+      <p class="product-price fw-bold">Rp 20.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+
+
+<!-- kartu  PIZZA -->
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://www.moulinex-me.com/medias/?context=bWFzdGVyfHJvb3R8MTQzNTExfGltYWdlL2pwZWd8YUdObEwyaG1aQzh4TlRrMk9EWXlOVGM0TmpreE1DNXFjR2N8MmYwYzQ4YTg0MTgzNmVjYTZkMWZkZWZmMDdlMWFlMjRhOGIxMTQ2MTZkNDk4ZDU3ZjlkNDk2MzMzNDA5OWY3OA" class="card-img-top" alt="Pepperoni Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Pepperoni Pizza</h5>
+      <p class="card-text description-text">Pizza dengan topping pepperoni dan keju mozarella.</p>
+      <p class="product-price fw-bold">Rp 65.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Aqy7kjjQbxmABSduzIg3uyh_TOOS0_GPGA&s" class="card-img-top" alt="Veggie Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Veggie Pizza</h5>
+      <p class="card-text description-text">Pizza sayuran segar dengan saus tomat dan keju.</p>
+      <p class="product-price fw-bold">Rp 60.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKAWpOPkhZjOC67dMQ96sx1wNxZGQUMV6Eg&s" class="card-img-top" alt="Meat Lovers Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Meat Lovers Pizza</h5>
+      <p class="card-text description-text">Topping daging sapi, sosis, dan pepperoni yang melimpah.</p>
+      <p class="product-price fw-bold">Rp 70.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2moArxa6J_y8kZ10gCxOPwYv_iQgivTX5cw&s" class="card-img-top" alt="BBQ Chicken Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">BBQ Chicken Pizza</h5>
+      <p class="card-text description-text">Pizza ayam panggang dengan saus BBQ dan keju leleh.</p>
+      <p class="product-price fw-bold">Rp 68.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://dinnerthendessert.com/wp-content/uploads/2023/06/Hawaiian-Pizza-7.jpg" class="card-img-top" alt="Hawaiian Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Hawaiian Pizza</h5>
+      <p class="card-text description-text">Perpaduan manis nanas, daging asap, dan keju mozzarella.</p>
+      <p class="product-price fw-bold">Rp 66.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_nhW3PXLYONrRKUqqq_bB4ijw0Mwrg-C9w&s" class="card-img-top" alt="Cheese Lovers Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Cheese Lovers Pizza</h5>
+      <p class="card-text description-text">Pizza keju premium dengan campuran mozzarella dan cheddar.</p>
+      <p class="product-price fw-bold">Rp 62.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card pizza">
+  <div class="card h-100 position-relative">
+    <img src="https://buckets.sasa.co.id/v1/AUTH_Assets/Assets/p/website/medias/page_medias/resep_pizza_seafood.jpg" class="card-img-top" alt="Seafood Pizza">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Seafood Pizza</h5>
+      <p class="card-text description-text">Pizza dengan topping udang, cumi, dan saus krim bawang putih.</p>
+      <p class="product-price fw-bold">Rp 72.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+
+
+
+    <!-- kartu MINUMAN DINGIN -->
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://www.allrecipes.com/thmb/8phuC-bVeBCob5yx4rBKM7ajBsw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21667-easy-iced-coffee-ddmfs-2x1-0091-18b743db97f5495e9e152b034e211b4c.jpg" class="card-img-top" alt="Iced Coffee">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Iced Coffee</h5>
+      <p class="card-text description-text">Kopi dingin segar dengan susu dan es batu.</p>
+      <p class="product-price fw-bold">Rp 30.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIQUahbAip2xcXmRgkCyGHQ9fReZ574EMHg&s" class="card-img-top" alt="Lemon Tea">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Lemon Tea</h5>
+      <p class="card-text description-text">Teh segar dengan irisan lemon dan es batu.</p>
+      <p class="product-price fw-bold">Rp 22.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://asset.kompas.com/crops/hCzQp_lseY7WlTf--9jjpbLPCoM=/83x67:940x638/1200x800/data/photo/2022/10/17/634d11c2c0a21.jpg" class="card-img-top" alt="Milkshake Cokelat">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Milkshake Cokelat</h5>
+      <p class="card-text description-text">Milkshake cokelat lembut dengan krim di atasnya.</p>
+      <p class="product-price fw-bold">Rp 28.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/07/28042143/sedang-tren-ini-cara-membuat-es-coklat-yang-segar-dan-kental-halodoc.jpg.webp" class="card-img-top" alt="Es Cokelat">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Es Cokelat</h5>
+      <p class="card-text description-text">Minuman cokelat dingin yang manis dan menyegarkan.</p>
+      <p class="product-price fw-bold">Rp 25.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUwJd9sLJvq_Licp-fJB4aHvrFEstKZPTvfg&s" class="card-img-top" alt="Iced Latte">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Iced Latte</h5>
+      <p class="card-text description-text">Perpaduan espresso dan susu segar dengan es batu.</p>
+      <p class="product-price fw-bold">Rp 32.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://www.deliciousmagazine.co.uk/wp-content/uploads/2024/11/2024D226_PINTEREST_FLOAT_COKE_FLOAT_1-scaled.jpg" class="card-img-top" alt="Soda Float">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Soda Float</h5>
+      <p class="card-text description-text">Minuman soda segar dengan es krim vanilla di atasnya.</p>
+      <p class="product-price fw-bold">Rp 27.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 product-card cold-drinks">
+  <div class="card h-100 position-relative">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoxRJj4Bl_ndVZsyefIlph04eSy6HNqOU8A&s" class="card-img-top" alt="Es Buah Segar">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Es Buah Segar</h5>
+      <p class="card-text description-text">Campuran buah-buahan segar dengan sirup manis dan es serut.</p>
+      <p class="product-price fw-bold">Rp 26.000</p>
+    </div>
+    <button class="btn btn-add-to-cart">+</button>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="se.js"></script>
+</body>
+</html>

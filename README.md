@@ -40,4 +40,4 @@ Kelas: TI-F
 ![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/2.Menu_produk/produk%205.png?raw=true)
 
 # Bagian Menu Konta #
-![alt text](?raw=true)
+![alt text](https://github.com/sal156/tugaswebsite.pbp/blob/main/3.Menu_Kontak/kontak.png?raw=true)
